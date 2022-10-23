@@ -11,3 +11,17 @@ resource "azurerm_public_ip" "apidevops" {
     environment = "apidevops"
   }
 }
+
+
+resource "azurerm_public_ip" "apilbdevops" {
+  name                = "apilbdevops"
+  location            = var.location
+  resource_group_name = var.resource_group_name
+  zones = ["1","2","3"]
+  sku = "Standard"
+  allocation_method = "Static"
+
+  tags = {
+    environment = "apilbdevops"
+  }
+}

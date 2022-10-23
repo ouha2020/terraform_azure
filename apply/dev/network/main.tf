@@ -24,13 +24,13 @@ locals {
     },
   ]
 
-  vms = ["devoup01", "devoup02"]
+  vms = ["devops01", "devops02"]
   vms_config = {
-    devoup01 = {
-      publicIpName = "ipdevoup01"
+    devops01 = {
+      publicIpName = "ipdevops01"
     },
-    devoup02 = {
-      publicIpName = "ipdevoup02"
+    devops02 = {
+      publicIpName = "ipdevops02"
     },
   }
 }
